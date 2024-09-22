@@ -67,7 +67,7 @@ public class RedBlackTree<T extends Comparable<T>> {
      */
     RBTreeNode<T> rotateRight(RBTreeNode<T> node) {
         RBTreeNode<T> leftNode = node.left;
-        boolean nodeColor = node.isBlack;
+        boolean nodeColor = true;
         boolean nodeLeftColor = leftNode.isBlack;
         leftNode.isBlack = nodeColor;
         node.isBlack = nodeLeftColor;  //左节点和本节点互换
